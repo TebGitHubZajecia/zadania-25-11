@@ -7,8 +7,70 @@ import static java.lang.System.exit;
 public class Main {
     public static void main(String[] args) {
 
+
+        //z6
+        /*int x = 0;
+        char[] tablica = new char[26];
+        for(int i = 97; i < 123; i++){
+            tablica[x] = (char)i;
+            System.out.println(tablica[x]);
+            x+=1;
+        }*/
+
+        //z5
+        /*int[] tablica = new int[100];
+        int x = 0;
+        for(int i = 0; i < 100; i++){
+
+            tablica[i] = x;
+            if (x == 9){
+                x = 0;
+            } else {
+                x+=1;
+            }
+            System.out.println(i + ":" + tablica[i]);
+        }*/
+
+        //z4
+        /*boolean[] tablica = new boolean[20];
+        for(int i = 0; i < 20; i++){
+            tablica[i] = i%2==0 ? true : false;
+            System.out.println(i + ":" + tablica[i]);
+        }*/
+
+        //z3
+        /*boolean[] tablica = new boolean[20];
+        for(int i = 0; i < 20; i++){
+            if(i%2==0){
+                tablica[i] = true;
+            } else {
+                tablica[i] = false;
+            }
+            System.out.println(i + ":" + tablica[i]);
+        }*/
+
+        //z2
+        /*int tablica[] = new int[10];
+        int war = 10;
+        for(int i = 0; i < 10; i++){
+            tablica[i] = war;
+            war+=10;
+            System.out.println(tablica[i]);
+        }*/
+
+
+        //z1
+        /*int tablica[] = new int[10];
+        int war = 101;
+        for(int i = 0; i < 10; i++){
+            tablica[i] = war;
+            war+=1;
+            System.out.println(tablica[i]);
+        }*/
+
+
         //kalkulator
-        float war_a = 0;
+        /*float war_a = 0;
         float war_b = 0;
         float war_d = 0;
         while (true) {
@@ -84,7 +146,7 @@ public class Main {
             catch(Exception Exception){
                 System.out.println("Zła operacja");
             }
-        }
+        }*/
 
 
 
