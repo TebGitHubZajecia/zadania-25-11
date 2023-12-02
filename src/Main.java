@@ -1,11 +1,125 @@
 import java.util.*;
 
-import static java.lang.Float.isFinite;
-import static java.lang.Float.isInfinite;
-import static java.lang.System.exit;
-
 public class Main {
+
+    static void sprawdz(String wyraz) {
+        System.out.println(wyraz);
+    }
+
+    static void porownaj(String wyraz, String[] array) {
+        System.out.println("Z którym wyrazem porównać?");
+        Scanner scan = new Scanner(System.in);
+        int war2 = scan.nextInt();
+        System.out.println(wyraz + " " + array[war2]);
+        System.out.println(wyraz.compareTo(array[war2]));
+    }
+
+    static void dodaj(String wyraz, String[] array) {
+        System.out.println("Który wyraz chcesz dodać?");
+        Scanner scan = new Scanner(System.in);
+        int war2 = scan.nextInt();
+        System.out.println(wyraz.concat(array[war2]));
+    }
+
+    static void znajdz(String wyraz) {
+        System.out.println("Jaki znak chcesz znaleźć?");
+        Scanner scan = new Scanner(System.in);
+        String war2 = scan.nextLine();
+        System.out.println(wyraz.indexOf(war2));
+    }
+
+    static void length(String wyraz) {
+        System.out.println("Długość wynosi: " + wyraz.length());
+    }
+
+
+    static void casee(String wyraz) {
+        System.out.println(wyraz.toUpperCase().charAt(0) + wyraz.substring(1));
+    }
+
+    static void con(String wyraz) {
+        System.out.println("Index 1");
+        Scanner scan = new Scanner(System.in);
+        int war2 = scan.nextInt();
+        System.out.println("Index 2");
+        int war3 = scan.nextInt();
+        System.out.println(wyraz.substring(war2, war3));
+    }
+
+    static void dlugosc(String wyraz, String[] array) {
+        System.out.println("Z którym wyrazem porównać?");
+        Scanner scan = new Scanner(System.in);
+        int war2 = scan.nextInt();
+        String slowo = wyraz.length() > array[war2].length() ? wyraz : array[war2];
+        System.out.println("Dłuższy:" + slowo);
+    }
+
+    static void pali(String wyraz, String[] array) {
+        System.out.println("Z którym wyrazem porównać?");
+        Scanner scan = new Scanner(System.in);
+        int war2 = scan.nextInt();
+        wyraz = wyraz.replace(" ", "");
+        array[war2] = array[war2].replace(" ", "");
+        wyraz = wyraz.toLowerCase();
+        array[war2] = array[war2].toLowerCase();
+
+        System.out.println("wyraz 1 " + wyraz);
+        System.out.println("wyraz 2 " + array[war2]);
+
+        if (wyraz.length() != array[war2].length()){
+            System.out.println("To nie palindrom");
+            System.exit(1);
+        }
+
+        int x = -1;
+        for(int i = 0; i < wyraz.length(); i++){
+            try {
+                if (wyraz.charAt(i) == array[war2].charAt(array[war2].length() + x)) {
+                    x -= 1;
+                } else {
+                    System.out.println("To nie palindrom");
+                    System.exit(1);
+                }
+            } catch (Exception Exception) {
+                System.out.println("To nie palindrom");
+            }
+        }
+        System.out.println("To palindrom");
+    }
+
+
+
     public static void main(String[] args) {
+
+
+        //z2
+        String[] array = new String[3];
+        Scanner myObj = new Scanner(System.in);
+        System.out.println("Podaj słowo 0");
+        array[0] = myObj.nextLine();
+        System.out.println("Podaj słowo 1");
+        array[1] = myObj.nextLine();
+        System.out.println("Podaj słowo 2");
+        array[2] = myObj.nextLine();
+        System.out.println("Wybierz słowo 0/1/2");
+        int war = myObj.nextInt();
+        //System.out.println("Wybierz zadanie (S)prawdź/(P)orównaj/(D)odaj/(Z)najdź znak/(L)ength/(C)ase/C(o)ncat");
+
+
+        pali(array[war], array);
+
+
+        //z1
+        /*String ciag1 = "abc";
+        String ciag2 = "123";
+
+        String ciag3 = ciag1 + ciag2;
+
+        String ciag4 = ciag1.concat(ciag2);*/
+
+
+
+
 
 
         //z6
@@ -28,7 +142,7 @@ public class Main {
             } else {
                 x+=1;
             }
-            System.out.println(i + ":" + tablica[i]);
+            System.out.println(i + " : " + tablica[i]);
         }*/
 
         //z4
