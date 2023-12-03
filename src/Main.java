@@ -12,6 +12,19 @@ public class Main {
 
 
 
+        //tabliczka mnożenia
+        /*for(int i = 1; i < 10; i++){
+            ArrayList<Integer> lista = new ArrayList<Integer>();
+            for (int x = 1; x < 10; x++){
+                lista.add(i*x);
+            }
+            System.out.println(lista);
+        }*/
+
+
+
+
+        //totolotek
         /*Scanner scan = new Scanner(System.in);
         ArrayList<Integer> wybor = new ArrayList<Integer>();
         for (int i = 0; i < 6;){
