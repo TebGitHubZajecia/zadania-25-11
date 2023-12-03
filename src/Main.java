@@ -4,6 +4,7 @@ public class Main {
 
     static void sprawdz(String wyraz) {
         System.out.println(wyraz);
+        System.exit(1);
     }
 
     static void porownaj(String wyraz, String[] array) {
@@ -12,6 +13,7 @@ public class Main {
         int war2 = scan.nextInt();
         System.out.println(wyraz + " " + array[war2]);
         System.out.println(wyraz.compareTo(array[war2]));
+        System.exit(1);
     }
 
     static void dodaj(String wyraz, String[] array) {
@@ -19,22 +21,26 @@ public class Main {
         Scanner scan = new Scanner(System.in);
         int war2 = scan.nextInt();
         System.out.println(wyraz.concat(array[war2]));
+        System.exit(1);
     }
 
     static void znajdz(String wyraz) {
         System.out.println("Jaki znak chcesz znaleźć?");
         Scanner scan = new Scanner(System.in);
         String war2 = scan.nextLine();
-        System.out.println(wyraz.indexOf(war2));
+        System.out.println("Indeks znaku: " + wyraz.indexOf(war2));
+        System.exit(1);
     }
 
     static void length(String wyraz) {
         System.out.println("Długość wynosi: " + wyraz.length());
+        System.exit(1);
     }
 
 
     static void casee(String wyraz) {
         System.out.println(wyraz.toUpperCase().charAt(0) + wyraz.substring(1));
+        System.exit(1);
     }
 
     static void con(String wyraz) {
@@ -44,6 +50,7 @@ public class Main {
         System.out.println("Index 2");
         int war3 = scan.nextInt();
         System.out.println(wyraz.substring(war2, war3));
+        System.exit(1);
     }
 
     static void dlugosc(String wyraz, String[] array) {
@@ -52,6 +59,7 @@ public class Main {
         int war2 = scan.nextInt();
         String slowo = wyraz.length() > array[war2].length() ? wyraz : array[war2];
         System.out.println("Dłuższy:" + slowo);
+        System.exit(1);
     }
 
     static void pali(String wyraz, String[] array) {
@@ -85,6 +93,7 @@ public class Main {
             }
         }
         System.out.println("To palindrom");
+        System.exit(1);
     }
 
 
@@ -103,10 +112,49 @@ public class Main {
         array[2] = myObj.nextLine();
         System.out.println("Wybierz słowo 0/1/2");
         int war = myObj.nextInt();
-        //System.out.println("Wybierz zadanie (S)prawdź/(P)orównaj/(D)odaj/(Z)najdź znak/(L)ength/(C)ase/C(o)ncat");
-
-
-        pali(array[war], array);
+        String s = """
+            1.Sprawdź
+            2.Porównaj leksykograficznie
+            3.Dodaj wyraz do drugiego
+            4.Znajdź znak
+            5.Długość wyrazu
+            6.Wielka litera
+            7.Przycięcie wyrazu
+            8.Porównaj długość
+            9.Palindrom""";
+        System.out.println(s);
+        int zad = myObj.nextInt();
+        switch(zad){
+            case 1:
+                sprawdz(array[war]);
+                break;
+            case 2:
+                porownaj(array[war], array);
+                break;
+            case 3:
+                dodaj(array[war], array);
+                break;
+            case 4:
+                znajdz(array[war]);
+                break;
+            case 5:
+                length(array[war]);
+                break;
+            case 6:
+                casee(array[war]);
+                break;
+            case 7:
+                con(array[war]);
+                break;
+            case 8:
+                dlugosc(array[war], array);
+                break;
+            case 9:
+                pali(array[war], array);
+                break;
+            default:
+                break;
+        }
 
 
         //z1
