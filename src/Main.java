@@ -2,7 +2,86 @@ import java.util.*;
 
 public class Main {
 
-    static void sprawdz(String wyraz) {
+
+
+
+    public static void main(String[] args) {
+
+
+
+
+
+
+        /*Scanner scan = new Scanner(System.in);
+        ArrayList<Integer> wybor = new ArrayList<Integer>();
+        for (int i = 0; i < 6;){
+            System.out.println("Podaj liczbę: " + (i+1));
+            int number = scan.nextInt();
+            if(!wybor.contains(number)){
+                wybor.add(number);
+                i++;
+            } else {
+                System.out.println("Ta liczba już była podana");
+            }
+        }
+        Collections.sort(wybor);
+        System.out.println(wybor);
+
+
+        ArrayList<Integer> liczby = new ArrayList<Integer>();
+        Random rand = new Random();
+        for (int i = 0; i < 6;){
+            int number = rand.nextInt(1, 50);
+            if (!liczby.contains(number)){
+                liczby.add(number);
+                i++;
+            }
+        }
+        Collections.sort(liczby);
+        System.out.println("Wylosowane liczby " + liczby);
+
+
+        ArrayList<Integer> pasujace = new ArrayList<Integer>();
+        for (int liczba : liczby){
+            if (wybor.contains(liczba)){
+                pasujace.add(liczba);
+            }
+        }
+        Collections.sort(pasujace);
+        System.out.println("Pasujące liczby " + pasujace);*/
+
+
+
+
+
+
+
+
+
+        //liczby pierwsze
+        /*Scanner scan = new Scanner(System.in);
+        ArrayList<Integer> liczby = new ArrayList<Integer>();
+        int x = scan.nextInt(); //dolny przedział
+        int y = scan.nextInt(); //górny przedział
+        for (int i = x ; i < y ; i++){ // i - przechodzi przez liczby od dolnego do górnego przedziału
+            int z = 0; //liczba dzielników liczby
+            for (int a = 1; a <= i; a++){ // a - sprawdza czy liczba jest dzielnikiem
+                if (i % a == 0) z++;
+            }
+            if (z == 2) liczby.add(i); //jeżeli liczba ma 2 dzielniki, to jest pierwsza, dodaj do listy
+        }
+        System.out.println(liczby);*/
+
+
+
+
+    }
+
+
+
+
+
+    /*static void sprawdz(String wyraz) {
         System.out.println(wyraz);
         System.exit(1);
     }
@@ -74,13 +153,13 @@ public class Main {
         System.out.println("wyraz 1 " + wyraz);
         System.out.println("wyraz 2 " + array[war2]);
 
-        if (wyraz.length() != array[war2].length()){
+        if (wyraz.length() != array[war2].length()) {
             System.out.println("To nie palindrom");
             System.exit(1);
         }
 
         int x = -1;
-        for(int i = 0; i < wyraz.length(); i++){
+        for (int i = 0; i < wyraz.length(); i++) {
             try {
                 if (wyraz.charAt(i) == array[war2].charAt(array[war2].length() + x)) {
                     x -= 1;
@@ -95,7 +174,6 @@ public class Main {
         System.out.println("To palindrom");
         System.exit(1);
     }
-
 
 
     public static void main(String[] args) {
@@ -113,18 +191,18 @@ public class Main {
         System.out.println("Wybierz słowo 0/1/2");
         int war = myObj.nextInt();
         String s = """
-            1.Sprawdź
-            2.Porównaj leksykograficznie
-            3.Dodaj wyraz do drugiego
-            4.Znajdź znak
-            5.Długość wyrazu
-            6.Wielka litera
-            7.Przycięcie wyrazu
-            8.Porównaj długość
-            9.Palindrom""";
+                1.Sprawdź
+                2.Porównaj leksykograficznie
+                3.Dodaj wyraz do drugiego
+                4.Znajdź znak
+                5.Długość wyrazu
+                6.Wielka litera
+                7.Przycięcie wyrazu
+                8.Porównaj długość
+                9.Palindrom""";
         System.out.println(s);
         int zad = myObj.nextInt();
-        switch(zad){
+        switch (zad) {
             case 1:
                 sprawdz(array[war]);
                 break;
@@ -155,7 +233,7 @@ public class Main {
             default:
                 break;
         }
-
+    }*/
 
         //z1
         /*String ciag1 = "abc";
@@ -164,11 +242,6 @@ public class Main {
         String ciag3 = ciag1 + ciag2;
 
         String ciag4 = ciag1.concat(ciag2);*/
-
-
-
-
-
 
         //z6
         /*int x = 0;
@@ -312,10 +385,6 @@ public class Main {
 
 
 
-
-
-
-
         /*Scanner myObj = new Scanner(System.in);  // Create a Scanner object
         String war_a = myObj.nextLine();
         String war_b = myObj.nextLine();
@@ -327,5 +396,7 @@ public class Main {
 
 
         */
-    }
+
+
+
 }
