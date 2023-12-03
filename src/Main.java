@@ -8,10 +8,6 @@ public class Main {
     public static void main(String[] args) {
 
 
-
-
-
-
         //tabliczka mnożenia
         /*for(int i = 1; i < 10; i++){
             ArrayList<Integer> lista = new ArrayList<Integer>();
@@ -20,8 +16,6 @@ public class Main {
             }
             System.out.println(lista);
         }*/
-
-
 
 
         //totolotek
@@ -66,11 +60,6 @@ public class Main {
 
 
 
-
-
-
-
-
         //liczby pierwsze
         /*Scanner scan = new Scanner(System.in);
         ArrayList<Integer> liczby = new ArrayList<Integer>();
@@ -84,9 +73,6 @@ public class Main {
             if (z == 2) liczby.add(i); //jeżeli liczba ma 2 dzielniki, to jest pierwsza, dodaj do listy
         }
         System.out.println(liczby);*/
-
-
-
 
     }
 
