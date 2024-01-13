@@ -1,0 +1,20 @@
+table{
+    border: 1px solid rgb(111, 9, 179);
+    padding: 2px;
+    margin-bottom: 15px;
+}
+td{
+    border: 1px solid black;
+    padding: 5px;
+}
+#tabela2{
+    border: 2px solid rgb(24, 192, 9);
+}
+.elementy-td{
+    color: white;
+    background: #000000;
+}
+.elementy-th{
+    color: rgb(235, 33, 33);
+    background: #06849b;
+}

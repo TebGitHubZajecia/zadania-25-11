@@ -1,0 +1,48 @@
+body {
+    background-color: #9F9386;
+}
+#div-1 {
+    background-color: slategray;
+    width: auto;
+    height: 60px;
+    padding-top: 30px;
+    padding-left: 25px;
+}
+.a-1 {
+    text-decoration: none;
+    font-style: italic;
+    color: thistle;
+    margin-left: 25px;
+}
+#div-2 {
+    background-color: cadetblue;
+    width: auto;
+    height: 500px;
+}
+.h-1 {
+    font-style: italic;
+    color: beige;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.img {
+    height: 100px;
+    width: 100px;
+    padding-left: 50%;
+}
+.p-1 {
+    letter-spacing: 4px;
+    font-style: italic;
+    padding-left: 5%;
+    padding-bottom: 5%;
+    padding-right: 5%;
+}
+#div-3 {
+    background-color: #212738;
+}
+#div-4 {
+    background-color: darkslateblue;
+}
+#div-5 {
+    background-image: url(sailaway.jpg);
+}
